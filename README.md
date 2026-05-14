@@ -79,4 +79,12 @@ O app fica disponível em `http://localhost:3000`
 
 ---
 
-Desenvolvido por **Jeanderson Silva** — Full Stack Developer
+## 👑 Autor
+
+**Jeanderson Silva** 🤓✍️
+
+*Desenvolvedor Full-Stack | Engenheiro Frontend | Arquiteto de Software*
+
+Construído desde a engenharia de shaders GLSL customizados e renderização 3D em tempo real (Three.js + R3F) até a prevenção de memory leaks em canvas WebGL, passando por scroll cinematográfico com Lenis e animações de alto desempenho com GSAP.
+
+Sinta-se à vontade para auditar a lógica do shader, explorar o gerenciamento de estado 3D com Zustand ou testar a experiência imersiva ao vivo!
