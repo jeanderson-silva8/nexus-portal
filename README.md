@@ -1,18 +1,24 @@
-# 🔮 Nexus Portal
-**Experiência web 3D interativa em tempo real — cena WebGL, shader GLSL customizado e animação cinematográfica.**
+# 🔮 NEXUS PORTAL — Experiência 3D Interativa
 
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-r184-000000?style=for-the-badge&logo=three.js&logoColor=white) ![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+> Experiência web cinematográfica com **cena 3D em tempo real**, shaders customizados, animações GSAP e personalização visual — construída com React, Three.js e TypeScript.
 
-🟢 **LIVE DEMO:** [Acesse o Nexus Portal Ao Vivo Aqui](https://nexus-portal-one.vercel.app/)
+[![Acessar Experiência](https://img.shields.io/badge/🌐_ACESSAR-nexus--portal.vercel.app-8B5CF6?style=for-the-badge)](https://nexus-portal-one.vercel.app)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-r184-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-3-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+
+🟢 **LIVE DEMO:** [Acesse o NEXUS PORTAL Ao Vivo Aqui](https://nexus-portal-one.vercel.app)
 🛡️ **Auditoria de Segurança Aplicada:** [Veja a auditoria 2026-05-21](docs/AUDIT_REPORT_2026-05-21.md)
 
 ---
 
-## 🛑 O Problema
+## 🌌 Sobre o Projeto
+
 A maioria dos portfólios de desenvolvedor frontend é uma página estática — bonita, mas que não prova domínio técnico real. Renderização 3D em tempo real no navegador, shaders customizados e animação sincronizada ao scroll são habilidades difíceis de demonstrar com uma landing page comum. Quem olha não consegue distinguir "sabe CSS" de "sabe computação gráfica".
 
-## ✅ A Solução (Nexus Portal)
-Nexus Portal é uma **experiência web imersiva** que combina computação gráfica 3D em tempo real com design de interface premium — um showcase técnico que prova, na prática, domínio de WebGL, shaders GLSL e animação de alto desempenho.
+O **NEXUS PORTAL** é a solução para isso: uma **experiência web imersiva** que combina computação gráfica 3D em tempo real com design de interface premium — um showcase técnico que prova, na prática, domínio de WebGL, shaders GLSL e animação de alto desempenho.
 
 O artefato Nexus — um anel tridimensional com shader próprio — gira num campo de partículas e estrelas procedurais, enquanto o usuário navega por seções com scroll suave e transições cinematográficas. A cena 3D é renderizada continuamente a 60fps, e o usuário pode personalizar cor, brilho e densidade de partículas ao vivo.
 
@@ -28,12 +34,13 @@ Nexus Portal é um **showcase técnico de frontend** — uma experiência 3D est
 
 ---
 
-## 🧠 Maior Desafio Técnico Superado
+## 🎯 Destaques Técnicos & Desafios Superados
+
 **Manter 60fps estáveis numa cena 3D contínua sem vazar memória nem travar a interface durante o scroll.**
 
 Renderização 3D em tempo real no navegador é frágil: um `requestAnimationFrame` não-limpo, um `EffectComposer` esquecido ou uma rotação dependente de frame-rate degradam a experiência em segundos. Três decisões resolveram:
 
-1. **Memory leak prevention** — todo `requestAnimationFrame`, listener e recurso de WebGL tem cleanup explícito no unmount dos componentes 3D. Sem isso, navegar entre seções acumularia render loops fantasma.
+1. **Memory leak prevention** — todo `requestAnimationFrame`, listener e recurso de WebGL tem cleanup explícito no unmount dos componentes 3D (como `EffectComposer` e listeners de redimensionamento). Sem isso, navegar entre seções acumularia render loops fantasma.
 2. **Frame-rate independent** — rotações e animações usam `delta time`, não contagem de frames. A cena se comporta igual em um monitor 60Hz e em um 144Hz.
 3. **Ponte UI ↔ Canvas via Zustand** — o estado da cena 3D (cor, brilho, densidade de partículas) vive num store Zustand único. A UI React e o canvas WebGL leem da mesma fonte sem re-renders desnecessários — o slider de personalização atualiza o shader sem reconstruir a cena.
 
@@ -48,20 +55,6 @@ Renderização 3D em tempo real no navegador é frágil: um `requestAnimationFra
 
 ---
 
-## 🧪 Qualidade
-
-Showcase de frontend estático — sem suíte de testes automatizados (não há lógica de negócio nem API a cobrir). O gate de qualidade antes de publicar é:
-
-```bash
-npm run lint     # ESLint — regras de hooks e react-refresh
-npm run build    # tsc -b + vite build — type-check estrito + build de produção
-```
-
-`tsc -b` roda type-check completo antes do build — qualquer erro de tipo bloqueia a publicação.
-
----
-
-<a id="seg-camadas"></a>
 ## 🔒 Segurança — camadas e status
 
 > *Auditoria 2026-05-21 (modo padrão): site estático bem-feito, **0 críticos**, 3 polimentos menores aplicados. Como não há backend, autenticação nem dados de usuário, a maioria dos 57 itens do checklist universal é N/A por escopo — a tabela abaixo lista o que de fato se aplica a um frontend estático.*
@@ -114,30 +107,6 @@ npm run build    # tsc -b + vite build — type-check estrito + build de produç
 
 ---
 
-## 🚀 Como Executar Localmente
-
-### Requisitos
-- Node.js 20+
-- npm 10+
-
-### Rodando
-```bash
-git clone https://github.com/jeanderson-silva8/nexus-portal.git
-cd nexus-portal
-npm install
-npm run dev
-```
-Acesse: `http://localhost:3000`
-
-### Build de produção
-```bash
-npm run lint    # ESLint
-npm run build   # tsc -b + vite build
-npm run preview # preview da build
-```
-
----
-
 ## 📂 Visão Geral da Estrutura
 
 ```text
@@ -163,6 +132,30 @@ nexus-portal/
 
 ---
 
+## 🚀 Como Executar Localmente
+
+### Requisitos
+- Node.js 20+
+- npm 10+
+
+### Rodando
+```bash
+git clone https://github.com/silvajeanderson165-creator/nexus-portal.git
+cd nexus-portal
+npm install
+npm run dev
+```
+Acesse: `http://localhost:3000`
+
+### Build de produção
+```bash
+npm run lint    # ESLint — regras de hooks e react-refresh
+npm run build   # tsc -b + vite build — type-check estrito + build de produção
+npm run preview # preview da build
+```
+
+---
+
 ## 👑 Autor
 
 **Jeanderson Silva** 🤓✍️
@@ -171,4 +164,4 @@ nexus-portal/
 
 Construído desde a engenharia de shaders GLSL customizados e renderização 3D em tempo real (Three.js + React Three Fiber) até a prevenção de memory leaks em canvas WebGL, passando por scroll cinematográfico com Lenis, animações de alto desempenho com GSAP e arquitetura de estado que conecta UI React ao canvas 3D sem re-renders desnecessários.
 
-Sinta-se à vontade para auditar a lógica do shader, explorar o gerenciamento de estado 3D com Zustand ou testar a experiência imersiva ao vivo.
+Sinta-se à vontade para auditar a lógica do shader, explorar o gerenciamento de estado 3D com Zustand ou testar a experiência imersiva ao vivo!
