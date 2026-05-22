@@ -129,31 +129,6 @@ nexus-portal/
 └── docs/
     └── AUDIT_REPORT_2026-05-21.md   # Auditoria de segurança
 ```
-
----
-
-## 🚀 Como Executar Localmente
-
-### Requisitos
-- Node.js 20+
-- npm 10+
-
-### Rodando
-```bash
-git clone https://github.com/silvajeanderson165-creator/nexus-portal.git
-cd nexus-portal
-npm install
-npm run dev
-```
-Acesse: `http://localhost:3000`
-
-### Build de produção
-```bash
-npm run lint    # ESLint — regras de hooks e react-refresh
-npm run build   # tsc -b + vite build — type-check estrito + build de produção
-npm run preview # preview da build
-```
-
 ---
 
 ## 👑 Autor
