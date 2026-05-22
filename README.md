@@ -24,7 +24,7 @@ O artefato Nexus — um anel tridimensional com shader próprio — gira num cam
 
 ---
 
-## ⚠️ Escopo deste projeto (honestidade primeiro)
+## ⚠️ Escopo deste projeto
 
 Nexus Portal é um **showcase técnico de frontend** — uma experiência 3D estática servida como HTML/JS/CSS pela CDN da Vercel.
 
