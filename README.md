@@ -16,7 +16,7 @@
   <div style="max-width: 800px; background-color: #161b22; border: 1px solid #30363d; border-bottom: none; border-top-left-radius: 8px; border-top-right-radius: 8px; padding: 10px; font-family: monospace; font-size: 13px; color: #8b949e; text-align: left;">
     🔴 &nbsp; 🟡 &nbsp; 🟢 &nbsp;&nbsp;&nbsp; <b>~/nexus-portal</b>
   </div>
-  <video src="public/videos/nexus.mp4" width="100%" autoplay loop muted playsinline style="max-width: 800px; display: block; border: 1px solid #30363d; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"></video>
+  <video src="https://github.com/user-attachments/assets/6e9159c5-2600-432a-9db8-a78dd9571b49"></video>
 </div>
 
 ---
