@@ -12,6 +12,21 @@
 🟢 **LIVE DEMO:** [Acesse o NEXUS PORTAL Ao Vivo Aqui](https://nexus-portal-one.vercel.app)
 🛡️ **Auditoria de Segurança Aplicada:** [Veja a auditoria 2026-05-21](docs/AUDIT_REPORT_2026-05-21.md)
 
+<div align="center">
+  <table style="width: 100%; max-width: 800px; border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; background-color: #0d1117;">
+    <tr style="background-color: #161b22; border-bottom: 1px solid #30363d;">
+      <td style="padding: 10px; font-family: monospace; font-size: 13px; color: #8b949e;">
+        🔴 &nbsp; 🟡 &nbsp; 🟢 &nbsp;&nbsp;&nbsp; <b>~/nexus-portal</b>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 0; line-height: 0;">
+        <video src="https://github.com/jeanderson-silva8/nexus-portal/raw/master/public/videos/nexus.mp4" width="100%" autoplay loop muted playsinline style="display: block; width: 100%; height: auto;"></video>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ---
 
 ## 🌌 Sobre o Projeto
