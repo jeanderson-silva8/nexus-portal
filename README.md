@@ -13,18 +13,10 @@
 🛡️ **Auditoria de Segurança Aplicada:** [Veja a auditoria 2026-05-21](docs/AUDIT_REPORT_2026-05-21.md)
 
 <div align="center">
-  <table style="width: 100%; max-width: 800px; border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px; overflow: hidden; background-color: #0d1117;">
-    <tr style="background-color: #161b22; border-bottom: 1px solid #30363d;">
-      <td style="padding: 10px; font-family: monospace; font-size: 13px; color: #8b949e;">
-        🔴 &nbsp; 🟡 &nbsp; 🟢 &nbsp;&nbsp;&nbsp; <b>~/nexus-portal</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 0; line-height: 0;">
-        <video src="public/videos/nexus.mp4" width="100%" autoplay loop muted playsinline style="display: block; width: 100%; height: auto;"></video>
-      </td>
-    </tr>
-  </table>
+  <div style="max-width: 800px; background-color: #161b22; border: 1px solid #30363d; border-bottom: none; border-top-left-radius: 8px; border-top-right-radius: 8px; padding: 10px; font-family: monospace; font-size: 13px; color: #8b949e; text-align: left;">
+    🔴 &nbsp; 🟡 &nbsp; 🟢 &nbsp;&nbsp;&nbsp; <b>~/nexus-portal</b>
+  </div>
+  <video src="public/videos/nexus.mp4" width="100%" autoplay loop muted playsinline style="max-width: 800px; display: block; border: 1px solid #30363d; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;"></video>
 </div>
 
 ---
