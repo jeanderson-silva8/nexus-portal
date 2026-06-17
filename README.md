@@ -17,7 +17,7 @@
     🔴 &nbsp; 🟡 &nbsp; 🟢 &nbsp;&nbsp;&nbsp; <b>~/nexus-portal</b>
   </div>
   <div style="max-width: 800px; border: 1px solid #30363d; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; overflow: hidden; line-height: 0;">
-    <video src="https://github.com/user-attachments/assets/6e9159c5-2600-432a-9db8-a78dd9571b49" width="100%" height="auto" autoplay loop muted playsinline></video>
+    <img src="public/videos/nexus.gif" width="100%" height="auto" alt="Nexus Portal Demo" />
   </div>
 </div>
 
