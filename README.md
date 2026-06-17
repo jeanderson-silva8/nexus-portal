@@ -21,7 +21,7 @@
     </tr>
     <tr>
       <td style="padding: 0; line-height: 0;">
-        <video src="https://github.com/jeanderson-silva8/nexus-portal/raw/master/public/videos/nexus.mp4" width="100%" autoplay loop muted playsinline style="display: block; width: 100%; height: auto;"></video>
+        <video src="public/videos/nexus.mp4" width="100%" autoplay loop muted playsinline style="display: block; width: 100%; height: auto;"></video>
       </td>
     </tr>
   </table>
